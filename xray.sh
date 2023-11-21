@@ -54,9 +54,3 @@ EOF
 done
 systemctl stop xray
 systemctl start xray
-    echo "###############################################################"
-    echo "#        支持系统:  CentOS 6+ / Debian 7+ / Ubuntu 12+        #"
-    echo "#        详细说明: 香港美国站群：www.haojieyun.com             #"
-    echo "#        海外跨境游戏专线：Q823558338                           #"
-    echo "#                                                            #"
-    echo "###############################################################"
