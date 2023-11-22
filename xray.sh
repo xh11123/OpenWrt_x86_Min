@@ -1,6 +1,7 @@
 ﻿#/bin/sh
 socks_port="56870"
-socks_pass="71f75846-4fc1-eff8-1b0e-186ccc395992"
+socks_user="8888"
+socks_pass="8888"
 iptables -P INPUT ACCEPT
 iptables -P FORWARD ACCEPT
 iptables -P OUTPUT ACCEPT
