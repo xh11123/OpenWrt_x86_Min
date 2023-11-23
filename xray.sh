@@ -1,5 +1,4 @@
-﻿#/bin/sh
-socks_port="56870"
+﻿socks_port="56870"
 socks_user="8888"
 socks_pass="8888"
 iptables -P INPUT ACCEPT
