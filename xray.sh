@@ -1,6 +1,4 @@
-﻿socks_port="56870"
-socks_user="8888"
-socks_pass="8888"
+#/bin/sh
 iptables -P INPUT ACCEPT
 iptables -P FORWARD ACCEPT
 iptables -P OUTPUT ACCEPT
@@ -36,12 +34,12 @@ for ((i = 0; i < ${#ips[@]}; i++)); do
 cat <<EOF >> /etc/xray/serve.toml
 [[inbounds]]
 listen = "${ips[i]}"
-port = $socks_port
+port = "27761"
 protocol = "shadowsocks"
 tag = "$((i+1))"
 [inbounds.settings]
 method = "aes-256-gcm"
-password = $socks_pass
+password = "71f75846-4fc1-eff8-1b0e-186ccc395992"
 [[routing.rules]]
 type = "field"
 inboundTag = "$((i+1))"
